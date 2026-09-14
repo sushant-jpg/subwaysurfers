@@ -1,0 +1,8 @@
+{
+  "name": "LumenRush",
+  "rootNamespace": "LumenRush",
+  "references": [
+    "UnityEngine.UI"
+  ],
+  "autoReferenced": true
+}

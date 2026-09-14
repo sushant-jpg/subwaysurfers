@@ -1,0 +1,12 @@
+{
+  "name": "LumenRush.PlayMode",
+  "references": [
+    "LumenRush"
+  ],
+  "optionalUnityReferences": [
+    "TestAssemblies"
+  ],
+  "defineConstraints": [
+    "UNITY_INCLUDE_TESTS"
+  ]
+}
