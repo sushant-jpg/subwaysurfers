@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#091723"><title>Lumen Rush • Afterlight Transit</title><link rel="stylesheet" href="/style.css"></head>
+<body>
+<main id="game">
+  <canvas id="world" aria-label="Three-lane neon city running game"></canvas>
+  <header class="masthead"><a href="/" aria-label="Lumen Rush home"><span class="mark">↗</span> LUMEN<span class="light">RUSH</span></a><span class="edition">AFTERLIGHT TRANSIT / VOL. 01</span><button id="sound" aria-label="Toggle sound">SOUND OFF</button></header>
+  <section id="hud" hidden><div class="stats"><span class="eyebrow">RUN SCORE</span><strong id="score">0</strong><span><b id="coins">0</b> TOKENS <i> / </i> <b id="distance">0</b> M</span></div><button id="pause" aria-label="Pause game">Ⅱ</button><div id="powers"></div></section>
+  <section id="overlay"><div class="panel" id="panel"></div></section>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <div id="touch" hidden><button data-action="left" aria-label="Move left">←</button><button data-action="right" aria-label="Move right">→</button><button data-action="jump" aria-label="Jump">↑</button><button data-action="slide" aria-label="Slide">↓</button></div>
+  <footer><span><i class="dot"></i> AFTERLIGHT LINE IS OPEN</span><span id="hint">A / D MOVE <em>·</em> SPACE JUMP <em>·</em> S SLIDE</span><span>BROWSER EDITION</span></footer>
+</main>
+<script type="module" src="/app.mjs"></script>
+</body></html>

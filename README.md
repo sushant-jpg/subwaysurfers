@@ -4,7 +4,21 @@ An original Unity/C# mobile endless runner set on the Afterlight transit line. A
 
 **Status: connected MVP source project with several progression systems.** Placeholder geometry and procedural limb animation are included. This is not a finished realistic-art game or a store-ready binary. Unity is not installed in the authoring environment, so editor compilation, Play Mode, Android/iOS builds, visual review, and device performance remain unverified.
 
-## Open and play
+## Play in your browser
+
+A standalone browser adaptation is included in `web/`. Start it with Node.js:
+
+```sh
+npm start
+```
+
+Open **http://localhost:5173** and select **START A RUN**. No npm dependencies or Unity installation are required. Use A/D or left/right arrows to change lanes, Space/up to jump, S/down to slide, and P/Escape to pause. Touch devices support swipes and on-screen buttons. Sound can be enabled in the top-right corner.
+
+The browser version includes procedural city graphics, five obstacle types, nine power-ups, one free revive, local best scores and tokens, three courier styles, duration upgrades, and daily rewards. Progress is stored in this browser, separately from Unity saves. This is a JavaScript/Canvas adaptation, not a Unity WebGL build; Unity missions, achievements, cosmetics, music, and mobile platform features are not ported.
+
+Run `npm test` for browser gameplay checks. The app has also been checked in headless Chrome at desktop and mobile sizes for startup, controls, pause/resume, layout, and runtime errors. The server listens only on this computer; stop it with Ctrl+C. Set `PORT` to use another port.
+
+## Open and play in Unity
 
 1. Install Unity **6000.0.23f1**, including Android Build Support and/or iOS Build Support, through Unity Hub. A compatible newer Unity 6.0 patch can be tried in a copy of the project.
 2. In Hub, choose **Add project from disk** and select this repository.
